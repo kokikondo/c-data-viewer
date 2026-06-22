@@ -91,6 +91,7 @@ int main(){
 		switch((char)c){
 
 		case 'e':
+		    //システム終了
 			printf("end of system.\nthaks you tester:)\n"
 							);
 			endFlag = 0;
@@ -138,7 +139,7 @@ int main(){
 			//次のページへ
 			if(page >= page_max - 1){
 				page = page_max  - 1;
-				strcpy(msg, "[msg]page is max.");
+				strcpy(msg, "[msg]最後のページです。");
 			}
 			else{
 				page++;
